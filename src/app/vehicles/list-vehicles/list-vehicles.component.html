@@ -1,0 +1,18 @@
+<table style="border:1px solid black;">
+  <tr>
+    <th>Id</th>
+    <th>Unit Name</th>
+    <th>Car Info</th>
+    <th>Active</th>
+    <th>Registration number</th>
+    <th>Number od tours</th>
+  </tr>
+  <tr *ngFor="let vehicle of vehicles" (click)="details(vehicle.id)">
+    <td>{{vehicle.id}}</td>
+    <td>{{vehicle.unitName}}</td>
+    <td>{{vehicle.carInfo}}</td>
+    <td>{{vehicle.active}}</td>
+    <td>{{vehicle.registrationNumber}}</td>
+    <td>{{vehicle.numberOfTours}}</td>
+  </tr>
+</table>

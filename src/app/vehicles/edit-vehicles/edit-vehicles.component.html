@@ -1,0 +1,27 @@
+<form #vehicleForm="ngForm" (ngSubmit)="editVehicle()" *ngIf="popup">
+    
+    <label for="unitName">Unit Name</label>
+    <input id="unitName" type="text" class="form-control" name="unitName" #unitName [(ngModel)]="vehicle.unitName"><br/>
+
+    <label for="carInfo"> Car info</label>
+    <input id="carInfo" type="text" class="form-control" name="carInfo" #carInfo [(ngModel)]="vehicle.carInfo"><br/>
+
+    <label for="active">Active</label>
+    <input id="active" type="text" class="form-control" name="active" #active [(ngModel)]="vehicle.active"><br/>
+
+    <label for="registrationNumber">Registration No.</label>
+    <input id="registrationNumber" type="text" class="form-control" name="registrationNumber" #registrationNumber [(ngModel)]="vehicle.registrationNumber"><br/>
+
+    <label for="numberOfTours">numberOfTours</label>
+    <input id="numberOfTours" type="text" class="form-control" name="numberOfTours" #numberOfTours [(ngModel)]="vehicle.numberOfTours"><br/>
+
+
+    <div>
+        <button type="submit">Save</button>
+
+        <button (click)="cancel()"> Cancel</button>
+    </div>
+
+
+</form>
+
