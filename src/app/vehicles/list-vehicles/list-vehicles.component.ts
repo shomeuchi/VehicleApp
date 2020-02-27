@@ -19,7 +19,7 @@ export class ListVehiclesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllVeh();
-    
+    console.log('nikola');
   }
 
   details(id: string) {
